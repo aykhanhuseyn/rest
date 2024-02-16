@@ -1,0 +1,90 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"recommended": true,
+				"noForEach": "off",
+				"noVoid": "off",
+				"noExcessiveCognitiveComplexity": "error",
+				"useSimplifiedLogicExpression": "error"
+			},
+			"correctness": {
+				"recommended": true
+			},
+			"performance": {
+				"recommended": true
+			},
+			"style": {
+				"recommended": true,
+				"noDefaultExport": "error",
+				"noShoutyConstants": "error",
+				"useBlockStatements": "error",
+				"useShorthandArrayType": "error",
+				"useShorthandAssign": "error",
+				"useSingleCaseStatement": "error",
+				"useNamingConvention": {
+					"level": "error",
+					"options": {
+						"enumMemberCase": "CONSTANT_CASE",
+						"strictCase": true
+					}
+				}
+			},
+			"suspicious": {
+				"recommended": true,
+				"noConstEnum": "off",
+				"noEmptyInterface": "off",
+				"noFallthroughSwitchClause": "warn",
+				"noMisrefactoredShorthandAssign": "error"
+			},
+			"nursery": {
+				"noDuplicateJsonKeys": "error",
+				"noEmptyBlockStatements": "error",
+				"noEmptyTypeParameters": "error",
+				"noGlobalAssign": "error",
+				"noGlobalEval": "error",
+				"noInvalidUseBeforeDeclaration": "error",
+				"noMisleadingCharacterClass": "error",
+				"noThenProperty": "error",
+				"noUnusedImports": "error",
+				"noUnusedPrivateClassMembers": "error",
+				"noUselessLoneBlockStatements": "error",
+				"noUselessTernary": "error",
+				"useAwait": "error",
+				"useExportType": "error",
+				"useGroupedTypeImport": "error",
+				"useImportRestrictions": "error",
+				"useImportType": "error",
+				"useFilenamingConvention": {
+					"level": "error",
+					"options": {
+						"strictCase": true,
+						"filenameCases": ["camelCase", "PascalCase", "export"]
+					}
+				},
+				"useConsistentArrayType": {
+					"level": "error",
+					"options": {
+						"syntax": "shorthand"
+					}
+				}
+			}
+		}
+	},
+	"files": {
+		"ignore": ["**/node_modules/**", "**/dist/**"],
+		"include": ["**/*.ts"]
+	},
+	"formatter": {
+		"enabled": true,
+		"ignore": ["**/node_modules/**", "**/dist/**"],
+		"indentWidth": 2,
+		"indentStyle": "tab"
+	}
+}
