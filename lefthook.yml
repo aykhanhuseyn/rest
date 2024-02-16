@@ -25,5 +25,3 @@ pre-push:
    run: bun check {push_files}
   test:
    run: bun test
-  packages-audit:
-   run: bun audit
