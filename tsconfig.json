@@ -2,7 +2,8 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"app/*": ["src/*"]
+			"app/*": ["src/*"],
+			"@types": ["@types"]
 		},
 		"lib": ["ESNext"],
 		"target": "ESNext",
@@ -21,6 +22,11 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"noFallthroughCasesInSwitch": true,
-		"forceConsistentCasingInFileNames": true
+		"forceConsistentCasingInFileNames": true,
+
+		/* ORM */
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
 	}
 }

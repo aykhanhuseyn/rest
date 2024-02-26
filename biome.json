@@ -32,7 +32,7 @@
 					"level": "error",
 					"options": {
 						"enumMemberCase": "CONSTANT_CASE",
-						"strictCase": true
+						"strictCase": false
 					}
 				}
 			},
@@ -78,7 +78,7 @@
 		}
 	},
 	"files": {
-		"ignore": ["**/node_modules/**", "**/dist/**"],
+		"ignore": ["**/node_modules/**", "**/dist/**", "@types/thinbus-srp.d.ts"],
 		"include": ["**/*.ts"]
 	},
 	"formatter": {
