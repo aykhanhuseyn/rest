@@ -1,11 +1,11 @@
-import { Router } from "express";
 import {
 	login,
 	register,
+	srpAuthenticate,
 	srpChallenge,
 	srpRegister,
-	srpAuthenticate,
 } from "app/controllers";
+import { Router } from "express";
 
 export const authRouter = Router();
 

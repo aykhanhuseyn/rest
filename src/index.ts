@@ -1,12 +1,12 @@
+import https from "https";
+import path from "path";
 import cors from "cors";
 import express from "express";
 import helmet from "helmet";
-import https from "https";
 import morgan from "morgan";
-import path from "path";
 
-import { router } from "./router";
 import { database } from "./database";
+import { router } from "./router";
 
 const app = express();
 

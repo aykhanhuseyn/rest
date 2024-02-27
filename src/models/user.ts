@@ -5,7 +5,7 @@ import {
 	Index,
 	PrimaryGeneratedColumn,
 } from "typeorm";
-import { object, string, date, type InferType } from "yup";
+import { type InferType, date, object, string } from "yup";
 
 @Entity()
 export class User extends BaseEntity {

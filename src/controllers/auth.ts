@@ -1,13 +1,13 @@
 import {
+	type AuthenticateSchema,
 	User,
 	authenticateSchema,
-	srpRegisterSchema,
 	srpChallengeSchema,
-	type AuthenticateSchema,
+	srpRegisterSchema,
 } from "app/models";
 import type { AsyncController } from "express";
-import MemDown from "memdown";
 import LevelUp from "levelup";
+import MemDown from "memdown";
 import serverSessionFactory, {
 	type PrivateStoreState,
 } from "thinbus-srp/server";
